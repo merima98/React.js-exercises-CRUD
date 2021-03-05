@@ -49,7 +49,7 @@ class NewPost extends Component {
           value={this.state.author}
           onChange={(event) => this.setState({ author: event.target.value })}
         >
-          <option value="Merima">Merima</option>
+          <option value="Tom">Tom</option>
           <option value="Manu">Manu</option>
         </select>
         <button onClick={this.postDataHandler}>Add Post</button>
