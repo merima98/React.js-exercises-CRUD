@@ -7,7 +7,6 @@ class FullPost extends Component {
     loadedPost: null,
   };
   componentDidMount() {
-    console.log(this.props);
     this.loadData();
   }
   componentDidUpdate() {
@@ -27,9 +26,7 @@ class FullPost extends Component {
     }
   }
   deletePostHandler = () => {
-    axios.delete("/posts/" + this.props.match.params.id).then((response) => {
-      console.log(response);
-    });
+    axios.delete("/posts/" + this.props.match.params.id).then((response) => {});
   };
   render() {
     let post = <p style={{ textAlign: "center" }}>Please select a Post!</p>;
